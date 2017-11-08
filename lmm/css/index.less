@@ -1,0 +1,247 @@
+
+
+// 媒体查询
+@media screen and (width: 320px) {
+  html {
+    font-size: 320px/20;
+  }
+}
+@media screen and (width: 360px) {
+  html {
+    font-size: 360px/20;
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 375px/20;
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 414px/20;
+  }
+}
+
+@headerBgColor: #f7f7f7;
+@headerColor: #d3079e;
+
+
+// 头部
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: @headerBgColor;
+  height: (45rem/32);
+  line-height: 45rem/32;
+  width: 100%;
+  font-size: 16rem/32;
+  padding: 0 (40rem/32) 0 (64rem/32);
+  text-align: center;
+  color: #000;
+  font-weight: normal;
+  .address {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    line-height: 45rem/32;
+    color: @headerColor;
+    font-size: 14rem/32;
+    margin-left: 10rem/32;
+    i {
+      display: inline-block;
+      position: relative;
+      width: 11rem/32;
+      height: 5rem/32;
+      margin-left: 5rem/32;
+      margin-bottom: 5rem/32;
+      background-image: url("../images/icon/xiasanjiao.png");
+      background-repeat: no-repeat;
+      background-size: 11rem/32 5rem/32;
+    }
+  }
+  .center {
+    position: absolute;
+    top: 0;
+    right: 10rem/32;
+    img {
+      width: 21rem/32;
+      height: 23rem/32;
+    }
+  }
+}
+
+// 主体部分
+main {
+  padding-top: 45rem/32;
+}
+
+// 轮播图
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  height: 195rem/32;
+  border-top: 1rem/32 solid #dddddd;
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .swipe-wrap>li {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+  a {
+    display: block;
+    width: 100%;
+  }
+}
+
+// 导航
+.nav {
+  width: 100%;
+  padding: 8rem/32 4rem/32 0;
+  ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    width: 32.333%;
+    margin-bottom: 8rem/32;
+    a {
+      display: block;
+    }
+    img {
+      vertical-align: top;
+    }
+    &:nth-child(2),
+    &:nth-child(5) {
+      margin-left: 8rem/32;
+      margin-right: 8rem/32;
+    }
+  }
+
+}
+
+// 旅行方式
+.way {
+  width: 100%;
+  border-top: 1rem/32 solid #ddd;
+  ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  li {
+    width: 25%;
+    float: left;
+    border-right: 1rem/32 solid #ddd;
+    border-bottom: 1rem/32 solid #ddd;
+    &:nth-child(4n) {
+      border-right: 0;
+    }
+    a {
+      display: block;
+    }
+    img {
+      vertical-align: top;
+    }
+  }
+}
+
+// 广告
+.banner {
+  width: 100%;
+  margin: 16rem/32 0;
+  ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  li {
+    width: 50%;
+    float: left;
+    border-bottom: 1rem/32 solid #ddd;
+    &:first-child {
+      border-right: 1rem/32 solid #ddd;
+    }
+    a {
+      display: block;
+    }
+    img {
+      vertical-align: top;
+    }
+  }
+}
+
+// 热门活动
+.activity {
+  width: 100%;
+  margin-bottom: 10rem/32;
+  h3 {
+    height: 36rem/32;
+    line-height: 36rem/32;
+    font-size: 16rem/32;
+    font-weight: normal;
+    padding-left: 8rem/32;
+    background-color: #f1f1f1;
+  }
+  ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  li {
+    width: 100%;
+    border-top: 1rem/32 solid #ddd;
+    border-bottom: 1rem/32 solid #ddd;
+    //overflow: hidden;
+    a {
+      display: block;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+
+}
+
+// 热门
+.hot {
+  width: 100%;
+  margin-bottom: 10rem/32;
+  ul {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+    margin-bottom: 5rem/32;
+    a {
+      display: block;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+// 底部
+footer {
+  width: 100%;
+  height: 30rem/32;
+  line-height: 30rem/32;
+  background-color: #d3079e;
+  font-size: 12rem/32;
+  padding: 0 8rem/32;
+  a {
+    float: left;
+    color: #fff;
+    &:first-child {
+      margin-right: 20rem/32;
+    }
+    &:last-child {
+      float: right;
+      font-weight: 700;
+    }
+  }
+}
